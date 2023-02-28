@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { checkIsAuth, registerUser } from '../redux/features/authSlice'
+import { checkIsAuth, registerUser } from '../redux/authSlice'
 import { toast } from 'react-toastify'
 
 export const Register = () => {
@@ -57,7 +57,7 @@ export const Register = () => {
             <button
               type="submit"
               onClick={handleSubmit}
-              className="flex w-full justify-center rounded bg-gray-600 py-2 px-4 text-white hover:bg-gray-500"
+              className="flex w-full justify-center rounded bg-gray-600 py-2 px-4 text-white hover:bg-yellow-500"
             >
               SIGN UP
             </button>
