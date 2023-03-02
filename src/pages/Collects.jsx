@@ -20,7 +20,7 @@ export const Collects = () => {
   }, [])
 
   return (
-    <div className="max-w-[1000px] mx-auto py-10 px-4 flex flex-col gap-10">
+    <div className="max-w-[1000px] mx-auto py-8 px-4 flex flex-col gap-4">
       {collects?.map((collect, idx) => (
         <CollectElement collect={collect} key={idx} />
       ))}

@@ -18,9 +18,9 @@ export const Main = () => {
   }
 
   return (
-    <div className="max-w-[1000px] mx-auto py-10 px-4">
+    <div className="max-w-[1000px] mx-auto py-8 px-4">
       <div className="flex justify-between gap-8">
-        <div className="flex flex-col gap-10 basis-4/5">
+        <div className="flex flex-col gap-4 basis-4/5">
           {collects?.map((collect, index) => (
             <CollectElement key={index} collect={collect} />
           ))}
