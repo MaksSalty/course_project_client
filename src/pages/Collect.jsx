@@ -72,7 +72,7 @@ export const Collect = () => {
     return <div className="text-center text-gray-400 py-10">Loading...</div>
   }
   return (
-    <div className="max-w-[1000px] mx-auto py-10 px-4">
+    <div className="max-w-[1000px] mx-auto py-10 px-4 break-all">
       {user?._id === collect.author && (
         <button className="flex justify-center items-center bg-gray-500 text-white rounded py-2 px-4 hover:bg-green-500">
           <Link className="flex" to={'/'}>

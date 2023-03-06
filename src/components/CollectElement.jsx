@@ -12,7 +12,9 @@ export const CollectElement = ({ collect }) => {
   return (
     <Link to={`/${collect._id}`}>
       <div className="flex flex-col basis-1/4 flex-grow bg-white rounded border p-4">
-        <div className="text-gray-600 font-bold text-2xl">{collect.title}</div>
+        <div className="text-gray-600 font-bold text-2xl line-clamp-1">
+          {collect.title}
+        </div>
         <div className="flex justify-between items-center pt-2">
           <div className="text-xs text-gray-400">
             Author: {collect.username}
