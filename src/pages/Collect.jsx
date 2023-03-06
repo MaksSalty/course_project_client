@@ -72,7 +72,7 @@ export const Collect = () => {
     return <div className="text-center text-gray-400 py-10">Loading...</div>
   }
   return (
-    <div className="max-w-[1000px] mx-auto py-10 px-4 break-all">
+    <div className="max-w-[1000px] mx-auto py-10 px-4">
       {user?._id === collect.author && (
         <button className="flex justify-center items-center bg-gray-500 text-white rounded py-2 px-4 hover:bg-green-500">
           <Link className="flex" to={'/'}>
@@ -82,7 +82,7 @@ export const Collect = () => {
       )}
 
       <div className="flex gap-4 py-8">
-        <div className="w-2/3 bg-white rounded border p-4">
+        <div className="w-2/3 bg-white rounded border p-4 break-all">
           <div className="text-gray-600 font-bold text-2xl">
             {collect.title}
           </div>
